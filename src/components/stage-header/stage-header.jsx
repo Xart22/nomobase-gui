@@ -71,7 +71,7 @@ const StageHeaderComponent = function (props) {
         const stageButton = showBranding ? (
             <div className={styles.embedScratchLogo}>
                 <a
-                    href="https://nomokit.robo-club.com"
+                    href="https://nomo-kit.com/"
                     rel="noopener noreferrer"
                     target="_blank"
                 >

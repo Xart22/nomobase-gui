@@ -330,10 +330,10 @@ class MenuBar extends React.Component {
         }
     }
     handleClickOpenCommunity() {
-        window.open("https://nomokit.robo-club.com");
+        window.open("https://nomo-kit.com/");
     }
     handleClickOpenWiki() {
-        window.open("https://nomokit.robo-club.com");
+        window.open("https://nomo-kit.com/");
     }
     restoreOptionMessage(deletedItem) {
         switch (deletedItem) {
@@ -570,31 +570,7 @@ class MenuBar extends React.Component {
                             onClick={this.props.onClickLogo}
                         />
                     </div>
-                    {this.props.canChangeLanguage && (
-                        <div
-                            className={classNames(
-                                styles.menuBarItem,
-                                styles.hoverable,
-                                styles.languageMenu
-                            )}
-                        >
-                            <div>
-                                <img
-                                    className={styles.languageIcon}
-                                    src={languageIcon}
-                                />
-                                <img
-                                    className={styles.languageCaret}
-                                    src={dropdownCaret}
-                                />
-                            </div>
-                            <LanguageSelector
-                                label={this.props.intl.formatMessage(
-                                    ariaMessages.language
-                                )}
-                            />
-                        </div>
-                    )}
+
                     {this.props.canManageFiles && (
                         <div
                             className={classNames(
