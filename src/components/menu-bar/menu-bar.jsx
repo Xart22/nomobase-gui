@@ -330,7 +330,7 @@ class MenuBar extends React.Component {
         }
     }
     handleClickOpenCommunity() {
-        window.open("https://nomo-kit.com/");
+        // window.open("https://nomo-kit.com/community");
     }
     handleClickOpenWiki() {
         window.open("https://nomo-kit.com/");
@@ -837,22 +837,24 @@ class MenuBar extends React.Component {
                     )}
                 </div>
                 <div className={styles.tailMenu}>
-                    <div
-                        aria-label={this.props.intl.formatMessage(
-                            ariaMessages.community
-                        )}
-                        className={classNames(
-                            styles.menuBarItem,
-                            styles.hoverable
-                        )}
-                        onClick={this.handleClickOpenCommunity}
-                    >
-                        <img
-                            className={styles.communityIcon}
-                            src={communityIcon}
-                        />
-                        <FormattedMessage {...ariaMessages.community} />
-                    </div>
+                    {
+                        <div
+                            aria-label={this.props.intl.formatMessage(
+                                ariaMessages.community
+                            )}
+                            className={classNames(
+                                styles.menuBarItem,
+                                styles.hoverable
+                            )}
+                            onClick={this.handleClickOpenCommunity}
+                        >
+                            <img
+                                className={styles.communityIcon}
+                                src={communityIcon}
+                            />
+                            <FormattedMessage {...ariaMessages.community} />
+                        </div>
+                    }
                     {/* <div
                         aria-label={this.props.intl.formatMessage(
                             ariaMessages.wiki
