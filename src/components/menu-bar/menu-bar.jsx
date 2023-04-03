@@ -330,7 +330,7 @@ class MenuBar extends React.Component {
         }
     }
     handleClickOpenCommunity() {
-        window.open("https://nomo-kit.com/");
+        window.open("https://nomo-kit.com/community");
     }
     handleClickOpenWiki() {
         window.open("https://nomo-kit.com/");
