@@ -168,7 +168,7 @@ const deviceData = [
         iconURL: arduinoNanoIconURL,
         description: (
             <FormattedMessage
-                defaultMessage="The Arduino Nano 2 is a classic small board to build your projects with."
+                defaultMessage="The Arduino Nano 2 is a classic small board using ATmega328p old to build your projects with."
                 description="Description for the Arduino Nano 2 device"
                 id="gui.device.arduinoNano2.description"
             />
