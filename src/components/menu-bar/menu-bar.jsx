@@ -138,6 +138,11 @@ const ariaMessages = defineMessages({
         defaultMessage: "Wiki",
         description: "accessibility text for the wiki button",
     },
+    nomotutorials: {
+        id: "gui.menuBar.nomotutorials",
+        defaultMessage: "Nomokit Tutorials",
+        description: "accessibility text for the community button",
+    },
 });
 
 const MenuBarItemTooltip = ({
@@ -334,6 +339,9 @@ class MenuBar extends React.Component {
     }
     handleClickOpenWiki() {
         window.open("https://nomo-kit.com/");
+    }
+    handleClickOpenNomoTutorials() {
+        window.open("https://nomo-kit.com/tutorial");
     }
     restoreOptionMessage(deletedItem) {
         switch (deletedItem) {
@@ -837,24 +845,36 @@ class MenuBar extends React.Component {
                     )}
                 </div>
                 <div className={styles.tailMenu}>
-                    {
-                        <div
-                            aria-label={this.props.intl.formatMessage(
-                                ariaMessages.community
-                            )}
-                            className={classNames(
-                                styles.menuBarItem,
-                                styles.hoverable
-                            )}
-                            onClick={this.handleClickOpenCommunity}
-                        >
-                            <img
-                                className={styles.communityIcon}
-                                src={communityIcon}
-                            />
-                            <FormattedMessage {...ariaMessages.community} />
-                        </div>
-                    }
+                    <div
+                        aria-label={this.props.intl.formatMessage(
+                            ariaMessages.community
+                        )}
+                        className={classNames(
+                            styles.menuBarItem,
+                            styles.hoverable
+                        )}
+                        onClick={this.handleClickOpenCommunity}
+                    >
+                        <img
+                            className={styles.communityIcon}
+                            src={communityIcon}
+                        />
+                        <FormattedMessage {...ariaMessages.community} />
+                    </div>
+                    <div
+                        aria-label={this.props.intl.formatMessage(
+                            ariaMessages.nomotutorials
+                        )}
+                        className={classNames(
+                            styles.menuBarItem,
+                            styles.hoverable
+                        )}
+                        onClick={this.handleClickOpenNomoTutorials}
+                    >
+                        <img className={styles.wikiIcon} src={wikiIcon} />
+                        <FormattedMessage {...ariaMessages.nomotutorials} />
+                    </div>
+                    <Divider className={classNames(styles.divider)} />
                     {/* <div
                         aria-label={this.props.intl.formatMessage(
                             ariaMessages.wiki
