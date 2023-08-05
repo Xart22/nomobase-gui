@@ -116,7 +116,7 @@ const deviceData = [
             />
         ),
         baseToolBoxXml: arduinoBaseToolBox,
-        programMode: ["realtime", "upload"],
+        programMode: ["upload"],
         programLanguage: ["block", "c", "cpp"],
         tags: ["arduino"],
         helpLink: "https://store.arduino.cc/usa/arduino-uno-rev3",
@@ -153,7 +153,7 @@ const deviceData = [
             />
         ),
         baseToolBoxXml: arduinoBaseToolBox,
-        programMode: ["realtime", "upload"],
+        programMode: ["upload"],
         programLanguage: ["block", "c", "cpp"],
         tags: ["arduino"],
         helpLink: "https://store.arduino.cc/usa/arduino-nano",
@@ -191,7 +191,7 @@ const deviceData = [
             />
         ),
         baseToolBoxXml: arduinoBaseToolBox,
-        programMode: ["realtime", "upload"],
+        programMode: ["upload"],
         programLanguage: ["block", "c", "cpp"],
         tags: ["arduino"],
         extensions: ["L298N"],
